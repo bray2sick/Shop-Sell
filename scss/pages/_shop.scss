@@ -1,0 +1,42 @@
+@use '../utils/variables' as *;
+
+.shop-grid {
+    padding: 50px 0px 50px 0px;
+    max-width: 960px;
+    margin: 0 auto;
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .grid-item {
+        text-align: center;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .product-name,
+        .product-price {
+            margin: 8px 0;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .shop-grid {
+        padding: 0px 16px 16px 16px;
+        padding-bottom: 16px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .shop-grid .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: #{$breakpoint-mobile + 1}) and (max-width: $breakpoint-tablet) {
+    .shop-grid .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
