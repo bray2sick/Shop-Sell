@@ -1,0 +1,72 @@
+@use '../utils/variables' as *;
+
+.navbar {
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin: 0 16px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 16px;
+
+        &:hover {
+            color: $hover-color;
+        }
+
+        &.active {
+            font-weight: 600;
+        }
+    }
+
+    &-toggle {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding-bottom: 16px;
+        margin-bottom: 16px !important;
+
+        &-toggle {
+            display: block;
+        }
+
+        &-menu {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            list-style-type: none;
+            align-items: center;
+            padding-top: 30px;
+            margin-bottom: -28px;
+
+            &.show {
+                display: flex;
+            }
+        }
+
+        ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        li {
+            padding: 8px 0;
+        }
+    }
+}

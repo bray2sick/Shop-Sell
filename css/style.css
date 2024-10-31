@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Acumin Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro"), url("../../css/fonts/Acumin-RPro.woff") format("woff");
+}
+@font-face {
+  font-family: "Acumin Pro Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Italic"), url("../../css/fonts/Acumin-ItPro.woff") format("woff");
+}
+@font-face {
+  font-family: "Acumin Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold"), url("../../css/fonts/Acumin-BdPro.woff") format("woff");
+}
+@font-face {
+  font-family: "Acumin Pro Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold Italic"), url("../../css/fonts/Acumin-BdItPro.woff") format("woff");
+}
+html, body {
+  font-family: "Acumin Pro", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.flexslider {
+  padding: 50px 0px 50px 0px;
+  width: 100%;
+  max-width: 465px;
+  height: 581px;
+  margin: 0 auto;
+  border: none;
+}
+.flexslider .slides {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+.flexslider .slides img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flexslider .slides li {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 430px) {
+  .flexslider {
+    padding: 0px;
+    max-width: 100%;
+    height: auto;
+  }
+  .slides {
+    align-items: center;
+  }
+  .slides img {
+    width: auto;
+    height: auto;
+  }
+}
+footer {
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-top-width: 1px;
+  border-top-color: rgb(235, 235, 235);
+  border-top-style: solid;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social a {
+  color: #848484;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer-social a:hover {
+  color: #dedede;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  padding-bottom: 50px;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 430px) {
+  .logo {
+    padding: 16px;
+  }
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  margin: 0 16px;
+}
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 16px;
+}
+.navbar a:hover {
+  color: rgb(133, 133, 133);
+}
+.navbar a.active {
+  font-weight: 600;
+}
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 430px) {
+  .navbar {
+    padding-bottom: 16px;
+    margin-bottom: 16px !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: -28px;
+  }
+  .navbar-menu.show {
+    display: flex;
+  }
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar li {
+    padding: 8px 0;
+  }
+}
+
+.archive-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.archive-image:first-child {
+  margin-top: 50px;
+}
+@media (max-width: 430px) {
+  .archive-image:first-child {
+    margin-top: 16px;
+  }
+}
+.archive-image:last-child {
+  margin-bottom: 0;
+}
+
+.grid-item {
+  padding: 50px 0px 50px 0px;
+}
+@media (max-width: 430px) {
+  .grid-item {
+    padding: 0px 0px 50px 0px;
+  }
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dropdown-container .dropdown-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.15em;
+  font-family: "Acumin Pro", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 0px;
+  border: 0px solid transparent;
+  background: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgb(133, 133, 133);
+}
+
+/*# sourceMappingURL=style.css.map */

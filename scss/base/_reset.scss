@@ -1,0 +1,8 @@
+@use '../utils/variables' as *;
+
+html, body {
+    font-family: $primary-font;
+    height: 100%;
+    margin: 0;
+    background-color: $background-color;
+}

@@ -1,0 +1,27 @@
+footer {
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-top-width: 1px;
+    border-top-color: rgb(235, 235, 235);
+    border-top-style: solid; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social {
+    a {
+        color: #848484;
+        margin: 0 10px;
+        text-decoration: none;
+
+        &:hover {
+            color: #dedede;
+        }
+    }
+}

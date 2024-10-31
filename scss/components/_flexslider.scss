@@ -1,0 +1,46 @@
+.flexslider {
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    max-width: 465px; 
+    height: 581px; 
+    margin: 0 auto;
+    border: none; 
+
+    .slides {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+
+        img {
+            margin: 0 auto;
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        li {
+            flex: 0 0 auto; 
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 430px) {
+    .flexslider {
+        padding: 0px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slides {
+        align-items: center;
+
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+}
