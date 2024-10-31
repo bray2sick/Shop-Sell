@@ -232,8 +232,8 @@ footer {
 }
 @media (min-width: 768px) {
   .shop-grid {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 }
 .terms-grid-item {
