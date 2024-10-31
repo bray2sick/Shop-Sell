@@ -213,10 +213,15 @@ footer {
 .shop-grid .grid-item img {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .shop-grid .grid-item .product-name,
 .shop-grid .grid-item .product-price {
   margin: 8px 0;
+}
+.shop-grid .grid-item:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 430px) {
