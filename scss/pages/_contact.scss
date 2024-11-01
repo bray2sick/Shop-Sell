@@ -1,4 +1,5 @@
 @use '../utils/variables' as *;
+@use 'sass:color';
 
 .contact-section {
     max-width: 960px;
@@ -45,13 +46,13 @@
             cursor: pointer;
             padding: 14px 10px 10px 10px;
             margin: 0 auto;
-        
+            
             &:hover {
-                background-color: darken($hover-color, 10%);
+                background-color: color.adjust($hover-color, $lightness: -10%);
             }
         }
     }
-}
+}    
 
 @media (max-width: 430px) {
     .contact-section {
