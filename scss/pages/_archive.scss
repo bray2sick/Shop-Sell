@@ -21,3 +21,10 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (max-width: 430px) {
+    .archive-image {
+        max-width: 100%;
+    }
+    
+}
