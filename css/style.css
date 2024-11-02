@@ -249,6 +249,11 @@ footer {
     padding-bottom: 16px;
   }
 }
+.mySwiper {
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
