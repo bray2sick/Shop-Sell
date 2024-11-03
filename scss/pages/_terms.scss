@@ -37,7 +37,8 @@
     background: #fff;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &.open {
         color: $hover-color;
     }
 }

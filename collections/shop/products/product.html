@@ -81,8 +81,40 @@
         </nav>
     </header>
     <!-- Main -->
-    <main>
+    <main class="product-wrapper">
+        <section class="product-images">
+            <div class="full-image">
+                <a href="../../../images/front.png" id="fullImageLink">
+                    <img id="fullImage" src="../../../images/front.png" alt="Full Product Image">
+                </a>
+            </div>
+            <div class="thumbnail-images">
+                <img src="../../../images/front.png" alt="Product Front Image" class="thumbnail"
+                    onclick="showImage('front')">
+                <img src="../../../images/back.png" alt="Product Back Image" class="thumbnail"
+                    onclick="showImage('back')">
+            </div>
+        </section>
+        <section class="product-details">
+            <h1 id="productName">Product Name</h1>
+            <h2 class="price" id="productPrice"><strong></strong></h2>
+            <div class="sizes">
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="x-large">X-Large</option>
+                    <option value="xx-large">XX-Large</option>
+                    <option value="xxx-large">XXX-Large</option>
+                </select>
 
+            </div>
+            <button class="add-to-cart" id="addToCartButton">ADD TO CART</button>
+            <p class="product-description">LOREM IPSUM DOLOR SIT AMET, CONSESCTETUR
+                ADIPISCI ELIT. PELLENTESQUE TEMPUS DIGNISSIM PURUS AC GRAVIDA. DUIS ACCUMSAN LIGULA NON ODIO VULPUTATE
+                MOLLIS. SED MATTIS, NISI NON.
+            </p>
+        </section>
     </main>
     <!-- Footer -->
     <footer>
