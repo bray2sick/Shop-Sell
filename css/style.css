@@ -4,6 +4,12 @@ html, body {
   height: 100%;
   margin: 0;
   background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 .flexslider {
@@ -172,12 +178,18 @@ footer {
   }
 }
 .archive-image:last-child {
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 430px) {
   .archive-image {
     max-width: 100%;
+  }
+  .archive-image:first-child {
+    margin-top: 0px;
+  }
+  .archive-image:last-child {
+    margin-bottom: 16px;
   }
 }
 .contact-section {

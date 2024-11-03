@@ -18,13 +18,18 @@
     }
 
     &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 50px;
     }
 }
 
 @media screen and (max-width: 430px) {
     .archive-image {
         max-width: 100%;
+        &:first-child {
+            margin-top: 0px;
+        }
+        &:last-child {
+            margin-bottom: 16px;
+        }
     }
-    
 }
