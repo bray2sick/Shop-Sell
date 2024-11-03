@@ -324,6 +324,7 @@ footer {
   margin-bottom: 0px;
   line-height: 1.6;
   white-space: normal;
+  width: 400px;
 }
 
 @media (max-width: 768px) {
@@ -351,6 +352,9 @@ footer {
     flex-direction: row;
     justify-content: center;
     width: 100%;
+  }
+  .product-wrapper p {
+    width: 288px;
   }
   .product-wrapper .product-details {
     text-align: center;

@@ -88,6 +88,7 @@
         margin-bottom: 0px;
         line-height: 1.6;
         white-space: normal;
+        width: 400px;
     }
 }
 
@@ -119,6 +120,10 @@
                 justify-content: center;
                 width: 100%;
             }
+        }
+
+        p {
+            width: 288px
         }
 
         .product-details {
