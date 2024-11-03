@@ -36,19 +36,16 @@
 
     .product-details {
         h1 {
-            margin: 0;
+            margin-top: 0px;
+            margin-bottom: 0px;
         }
 
-        h2 {
-            margin: 0;
-            margin-top: 16px;
-        }
 
         .sizes {
             font-family: inherit;
 
             select {
-                margin-top: 16px;
+                margin-top: 21px;
                 font-size: 16px;
                 border: 1px solid black;
                 padding: 10px;
@@ -131,7 +128,7 @@
 
             .sizes {
                 select {
-                    margin-top: 16px;
+                    margin-top: 0px;
                 }
             }
         }

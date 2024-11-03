@@ -281,17 +281,14 @@ footer {
   height: auto;
 }
 .product-wrapper .product-details h1 {
-  margin: 0;
-}
-.product-wrapper .product-details h2 {
-  margin: 0;
-  margin-top: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .product-wrapper .product-details .sizes {
   font-family: inherit;
 }
 .product-wrapper .product-details .sizes select {
-  margin-top: 16px;
+  margin-top: 21px;
   font-size: 16px;
   border: 1px solid black;
   padding: 10px;
@@ -360,7 +357,7 @@ footer {
     text-align: center;
   }
   .product-wrapper .product-details .sizes select {
-    margin-top: 16px;
+    margin-top: 0px;
   }
 }
 @media (min-width: 768px) and (max-width: 768px) {
